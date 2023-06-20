@@ -1,0 +1,38 @@
+.about_trust{
+    padding: 2rem 10rem;
+}
+.flex_container{
+    display: flex;
+    padding: 2rem;
+    align-items: start;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.flex_container img{
+    width: 100%;
+}
+.flex_container .content{
+    flex:1 1 30rem;
+}
+.flex_container .img{
+    flex:1 1 20rem;
+    margin-top: 3rem;
+}
+.flex_container .content h2{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+.flex_container .content p{
+    text-align: justify;
+    line-height: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.college_list{
+    padding: 3rem;
+}
+.college_list li{
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
