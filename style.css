@@ -386,7 +386,29 @@
     min-height: 70vh;
 }
 
+.breadcrumb{
+    background: linear-gradient(90deg,var(--theme-1),transparent) , url("./public/images/physed.jpg");
+    min-height: 35vh;
+    position: relative;
+    background-size: cover;
 
+}
+.breadcrumb h1{
+    position: absolute;
+    left: 40px;
+    bottom: 80px;   
+    text-transform: capitalize;
+    color: var(--white);
+}
+.breadcrumb div{
+    position: absolute;
+    left: 40px;
+    bottom: 50px;   
+    font-size: 1.2em;
+    color: var(--white);
+    text-transform: capitalize;
+    display: flex;align-items: center;justify-content: center;
+}
 
 
 
