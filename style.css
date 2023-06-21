@@ -240,10 +240,10 @@
     height: 3px;
 }
 .navbar-responsive{
-    display: none;
+    display: none ;
 }
 .open.navbar-responsive{
-    display: unset;
+    display: unset ;
 }
 @media screen and (max-width:1000px){
     .navbar{

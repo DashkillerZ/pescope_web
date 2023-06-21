@@ -27,4 +27,13 @@ const menuBtn = document.querySelector(".menu-btn");
 const navbarResponsive = document.querySelector(".navbar-responsive");
 menuBtn.addEventListener("click",()=>{
     navbarResponsive.classList.toggle("open")
+    
 })
+function animate(){
+requestAnimationFrame(animate);
+
+if(window.innerWidth>1000){
+    navbarResponsive.classList.remove("open")
+}
+}
+animate();
