@@ -41,12 +41,17 @@
     margin-bottom: 5px;
     text-transform: capitalize;
 }
+.mission_list{
+    padding:0rem 1rem;
+}
+.mission_list li{
+    margin-bottom: 5px;
+}
 .breadcrumb{
     background: linear-gradient(90deg,var(--theme-1),transparent) , url("../public/images/physed.jpg");
     min-height: 35vh;
     position: relative;
     background-size: cover;
-
 }
 .breadcrumb h1{
     position: absolute;
