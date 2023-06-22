@@ -23,7 +23,7 @@
 //     setInterval(showSlide, 10000); // Change slide every 5 seconds
 // });
 const transitionDuration = 0.5;
-const slideInterval = 5000;
+const slideInterval = 7000;
 
 const slider = document.querySelector('.carousel');
 const slides = Array.from(slider.getElementsByClassName('slide'));
