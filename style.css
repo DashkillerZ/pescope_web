@@ -162,8 +162,9 @@
     box-shadow:  0 0 5px rgba(0, 0, 0, 0.23);
     list-style: none;
 }
-.navbar .dropdown .dropdown-item{
+.navbar .dropdown .dropdown-item a{
     padding: 1rem;
+    display: block;
 }
 .navbar .dropdown .dropdown-item:hover{
     background:var(--grayscale-100);
