@@ -1,0 +1,26 @@
+.courses_offered{
+    padding: 2rem 10rem;
+    text-align: left;
+    overflow-x: hidden;
+}
+.available_courses p{
+    margin-bottom: 10px;
+}
+.courses_offered table , hr,th,td{
+    border: 2px solid rgb(214, 214, 214);
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.courses_offered table{
+    margin-bottom: 1rem;
+}
+
+.courses_offered .table_container{
+    overflow-x: auto;
+}
+@media screen and (max-width:1000px){
+    .courses_offered{
+        padding: 2rem 3rem;
+    }
+}
