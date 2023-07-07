@@ -20,6 +20,9 @@
     flex:1 1 20rem;
     
 }
+.flex_container>img{
+    
+}
 .flex_container .content h2{
     font-size: 1.4rem;
     line-height: 2.5rem;
@@ -53,4 +56,5 @@
     .about_trust{
         padding: 2rem 3rem;
     }
+    
 }
