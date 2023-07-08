@@ -19,7 +19,10 @@
 .courses_offered .table_container{
     overflow-x: auto;
 }
-
+.table_container h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
 @media screen and (max-width:1000px){
     .courses_offered{
         padding: 2rem 3rem;
