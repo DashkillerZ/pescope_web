@@ -70,13 +70,11 @@ menuBtn.addEventListener("click",()=>{
     
 })
 function animate(){
-requestAnimationFrame(animate);
-
-if(window.innerWidth>1000){
-    navbarResponsive.classList.remove("open")
+    if(window.innerWidth>1000){
+        navbarResponsive.classList.remove("open")
+    }
 }
-}
-animate();
+setInterval( animate ,500)
 
 
 
