@@ -470,11 +470,89 @@
 .footer{
     border-bottom: 8px solid var(--theme-1);
 }
+.footer *{
+    /* border: 1px solid lime; */
+}
+.footer .top{
+    padding-block: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer .top .logo{
+}
+.footer .top .logo-name{
+    font-weight: 700;
+    margin:0 20px;
+    font-size: 1.3rem;
+}
+.footer .top .logo-name p{
+    font-size: .8rem;
+}
+.footer .top .logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 0 40px;
+}
+.footer .top .quick-links{
+    margin: 0 20px;
+}
+.footer .top .quick-links>div{
+    display: flex;
+    flex-direction: column;
+}
+.footer .top .quick-links>div a{
+    text-decoration: none;
+    color: var(--grayscale-700);
+    margin: 5px 0 0 0;
+}
+.footer .top .quick-links>div a:hover{
+    color: var(--grayscale-900);
+    text-decoration: underline;
+}
+
+.footer .top .quick-links p{  
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: relative;
+    margin: 0 0 10px 0;
+}
+.footer .top .quick-links>p:after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: var(--theme-1);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.footer .top .address div:first-child{
+    padding: 0 0 10px 0;  
+    font-weight: 700;
+}
+.footer .top .address p{  
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: relative;
+    margin: 0 0 15px 0;
+}
+.footer .top .address>p:after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: var(--theme-1);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
 .footer .bottom{
     display: flex;
+    align-items: center;    
     justify-content: space-between;
     align-items: center;
-    padding-block: 16px;
+    padding-block: 32px;
     border-top: 1px solid var(--grayscale-50);
     
 }
@@ -483,6 +561,7 @@
 }
 .footer .bottom .copyright{
     margin: 0 40px 0 0;
+    margin: 0 auto;
     font-size: 1.2em;
 
 }
@@ -495,3 +574,26 @@
     }
     
 }
+
+
+
+#goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: var(--grayscale-500);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  #goToTopBtn:hover {
+    opacity: 1;
+  }

@@ -77,3 +77,33 @@ if(window.innerWidth>1000){
 }
 }
 animate();
+
+
+
+// Function to check if the user has scrolled enough to show the button
+function handleScroll() {
+    var scrollToTopBtn = document.getElementById("goToTopBtn");
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
+  
+  // Function to smoothly scroll to the top when the button is clicked
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }
+  
+  // Register the scroll event listener
+  window.onscroll = function () {
+    handleScroll();
+  };
+  
+  // Register the click event listener for the button
+  document.getElementById("goToTopBtn").addEventListener("click", scrollToTop);
+  
