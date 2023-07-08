@@ -42,7 +42,7 @@
 }
 .college_list li{
     margin-bottom: 5px;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 .mission_list{
     padding:0rem 1rem;
