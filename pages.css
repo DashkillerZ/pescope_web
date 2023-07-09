@@ -6,10 +6,18 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 .campus_images img{
     width: 30rem;
     flex: 1 1 30rem;
-    margin: 1rem;
+    margin-block: 2rem;
+}
+
+
+@media screen and (max-width:1000px){
+    .campus{
+        padding: 2rem 3rem;
+    }
+    
 }
