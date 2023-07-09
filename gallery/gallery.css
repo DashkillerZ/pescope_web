@@ -8,3 +8,30 @@
     padding: 3rem;
     gap: 1rem;
 }
+
+
+
+
+
+
+/* go to top button */
+.goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: var(--grayscale-500);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+  
+.goToTopBtn:hover {
+    opacity: 1;
+}
