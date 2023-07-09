@@ -20,16 +20,16 @@
     flex:1 1 20rem;
     
 }
-.flex_container .img:last-child {
+.flex_container .img-2{
     margin: 0 auto;
 
 }
-.flex_container .img:last-child img{
+.flex_container .img-2 img{
     max-width: 50%;
     
 }
 @media screen  and (max-width:1285px){
-    .flex_container .img:last-child img{
+    .flex_container .img-2 img{
      
         max-width: 100%;
         
