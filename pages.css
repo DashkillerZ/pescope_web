@@ -24,3 +24,29 @@
     }
     
 }
+
+.contact {
+    padding: 20px;
+}
+.contact >*{
+    margin: 50px;
+}
+.contact .heads p{
+    margin: 30px;
+}
+.contact h2{
+    margin: 0 0 20px 0;
+    position: relative;
+}
+.contact h2:after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #0D47A1;
+
+}
+
+
