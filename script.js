@@ -22,6 +22,53 @@
 //     showSlide();
 //     setInterval(showSlide, 10000); // Change slide every 5 seconds
 // });
+// Function to check if the user has scrolled enough to show the button
+function handleScroll() {
+  var scrollToTopBtn = document.querySelector(".goToTopBtn");
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+// Function to smoothly scroll to the top when the button is clicked
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+// Register the scroll event listener
+window.onscroll = function () {
+  handleScroll();
+};
+
+// Register the click event listener for the button
+document.querySelector(".goToTopBtn").addEventListener("click", scrollToTop);
+
+
+
+
+// navbar-responsive
+const menuBtn = document.querySelector(".menu-btn");
+const navbarResponsive = document.querySelector(".navbar-responsive");
+menuBtn.addEventListener("click",()=>{
+    navbarResponsive.classList.toggle("open")
+    
+})
+
+
+
+
+
+
+
+
+
+
 const transitionDuration = 0.5;
 const slideInterval = 7000;
 
@@ -63,12 +110,7 @@ setInterval(sliderAnimation, slideInterval)
 
 
 
-const menuBtn = document.querySelector(".menu-btn");
-const navbarResponsive = document.querySelector(".navbar-responsive");
-menuBtn.addEventListener("click",()=>{
-    navbarResponsive.classList.toggle("open")
-    
-})
+
 function animate(){
     if(window.innerWidth>1000){
         navbarResponsive.classList.remove("open")
@@ -78,30 +120,5 @@ setInterval( animate ,500)
 
 
 
-// Function to check if the user has scrolled enough to show the button
-function handleScroll() {
-    var scrollToTopBtn = document.querySelector(".goToTopBtn");
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      scrollToTopBtn.style.display = "block";
-    } else {
-      scrollToTopBtn.style.display = "none";
-    }
-  }
-  
-  // Function to smoothly scroll to the top when the button is clicked
-  function scrollToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-  }
-  
-  // Register the scroll event listener
-  window.onscroll = function () {
-    handleScroll();
-  };
-  
-  // Register the click event listener for the button
-  document.querySelector(".goToTopBtn").addEventListener("click", scrollToTop);
+
   
