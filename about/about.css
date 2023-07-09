@@ -20,7 +20,20 @@
     flex:1 1 20rem;
     
 }
-.flex_container>img{
+.flex_container .img:last-child {
+    margin: 0 auto;
+
+}
+.flex_container .img:last-child img{
+    max-width: 50%;
+    
+}
+@media screen  and (max-width:1285px){
+    .flex_container .img:last-child img{
+     
+        max-width: 100%;
+        
+    }
     
 }
 .flex_container .content h2{

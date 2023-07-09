@@ -80,7 +80,7 @@ setInterval( animate ,500)
 
 // Function to check if the user has scrolled enough to show the button
 function handleScroll() {
-    var scrollToTopBtn = document.getElementById("goToTopBtn");
+    var scrollToTopBtn = document.querySelector(".goToTopBtn");
     if (
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
@@ -103,5 +103,5 @@ function handleScroll() {
   };
   
   // Register the click event listener for the button
-  document.getElementById("goToTopBtn").addEventListener("click", scrollToTop);
+  document.querySelector(".goToTopBtn").addEventListener("click", scrollToTop);
   
