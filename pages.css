@@ -1,15 +1,18 @@
 .campus{
     padding: 2rem 10rem;
     line-height: 1.5rem;
+    text-align: justify;
 }
 .campus_images{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 .campus_images img{
-    width: 30rem;
+    width: 20rem;
     flex: 1 1 30rem;
     margin-block: 2rem;
 }
