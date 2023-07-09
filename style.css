@@ -96,7 +96,7 @@
     flex-wrap: wrap;
     padding: 1rem;    
     /* background: #00006A; */
-
+    
     color: #f0f0f0;
     
 }
@@ -423,7 +423,7 @@
 
 
 .breadcrumb{
-    background: linear-gradient(90deg,var(--theme-1),transparent) , url("../public/images/physed.jpg");
+    background: linear-gradient(90deg,var(--theme-1),transparent) , url("../public/images/physed.webp");
     min-height: 35vh;
     position: relative;
     background-size: cover;
