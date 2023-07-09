@@ -92,7 +92,7 @@
 
 .navbar{
     display: flex;
-    gap: 1rem;
+    gap: 1.2rem;
     flex-wrap: wrap;
     padding: 1rem;    
     /* background: #00006A; */
@@ -111,6 +111,10 @@
     align-items: center;
     color: #00006A;
     white-space: nowrap;
+}
+.navbar .nav-item a{
+    color: #00006A;
+
 }
 .navbar .nav-item span{
     margin: 0 8px 0 8px ;
@@ -469,18 +473,17 @@
 
 .footer{
     border-bottom: 8px solid var(--theme-1);
+    padding: 1rem;
 }
-.footer *{
-    /* border: 1px solid lime; */
-}
+/* .footer *{
+    border: 1px solid lime;
+} */
 .footer .top{
     padding-block: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-.footer .top .logo{
 }
 .footer .top .logo-name{
     font-weight: 700;
@@ -490,19 +493,22 @@
 .footer .top .logo-name p{
     font-size: .8rem;
 }
+
 .footer .top .logo-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 20px 0 40px;
+    border-bottom:0;
 }
 .footer .top .quick-links{
-    margin: 0 20px;
+    margin: 0 auto;
+    border-bottom:0;
+    padding-right: 1rem;
 }
 .footer .top .quick-links .list{
     display: flex;
     flex-direction: column;
-    margin: 0 5px;
+    margin-right: 15px;
 }
 .footer .top .quick-links div a{
     text-decoration: none;
@@ -519,6 +525,7 @@
     font-size: 1.2rem;
     position: relative;
     margin: 5px 0 10px 0;
+    
 }
 .footer .top .quick-links>p:after{
     content: "";
@@ -533,11 +540,15 @@
     padding: 0 0 10px 0;  
     font-weight: 700;
 }
+ .footer .top .address{
+     line-height: 1.5rem;
+ }
 .footer .top .address p{  
     font-weight: 700;
     font-size: 1.2rem;
     position: relative;
     margin: 0 0 15px 0;
+    
 }
 .footer .top .address>p:after{
     content: "";
@@ -555,7 +566,7 @@
     justify-content: space-between;
     align-items: center;
     padding-block: 32px;
-    border-top: 1px solid var(--grayscale-50);
+    border-top: 1px solid var(--grayscale-300);
     
 }
 .footer .bottom .logo{
@@ -568,12 +579,30 @@
 
 }
 @media screen and (max-width:1000px){
-    .footer .logo{
-        margin: 0 0 0 20px !important;
+
+    .footer .top{
+        gap: 1rem;
+        padding: 1rem;
     }
-    .footer .copyright{
-        margin: 0 20px 0 0 !important;
+    .footer .top .logo-container{
+        display: flex;
+        justify-content:start;
+        width: 100%;
+        border-right: 0;
+        border-bottom:1px solid var(--grayscale-50);
+        padding-bottom: 15px;
     }
+    .footer .top .quick-links{
+        margin: 0 auto;
+        width: 100%;
+        border-right: 0;
+        border-bottom:1px solid var(--grayscale-50);
+        padding-bottom: 15px;
+    }
+    .footer .top .address{
+        width: 100%;
+    } 
+
     
 }
 
