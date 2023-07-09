@@ -421,8 +421,6 @@
 }
 
 
-
-
 .breadcrumb{
     background: linear-gradient(90deg,var(--theme-1),transparent) , url("./public/images/breadcrumb.webp");
     min-height: 35vh;
