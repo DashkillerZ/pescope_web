@@ -48,5 +48,14 @@
     background: #0D47A1;
 
 }
+@media screen and (max-width:500px){
+    .contact {
+        padding: 10px;
+    }
+    .contact >*{
+        margin: 25px;
+    }
+}
+
 
 
