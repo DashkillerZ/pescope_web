@@ -8,3 +8,30 @@
     padding: 3rem;
     gap: 1rem;
 }
+
+
+
+.fullscreen{
+    background: rgba(0, 0, 0, 0.644);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1500 !important;
+}
+.fullscreen img{
+    width: 60%;
+    aspect-ratio:4/3;
+}
+.fullscreen span{
+    position: absolute;
+    cursor: pointer;
+    right:20px;
+    top: 20px;
+    font-size: 50px;
+    color: white;
+}
