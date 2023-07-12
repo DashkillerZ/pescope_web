@@ -69,43 +69,6 @@ menuBtn.addEventListener("click",()=>{
 
 
 
-const transitionDuration = 0.5;
-const slideInterval = 7000;
-
-const slider = document.querySelector('.carousel');
-const slides = Array.from(slider.getElementsByClassName('slide'));
-let currentIndex = 0;
-let nextIndex = currentIndex+1;
-let previousIndex = currentIndex-1;
-
-slides[currentIndex].style.opacity="1";
-function sliderAnimation() {
-    console.log(previousIndex,"-",currentIndex,"-",nextIndex)
-
-    if(currentIndex===slides.length-1){
-        currentIndex=0
-        nextIndex=currentIndex+1
-        previousIndex=currentIndex-1
-        slides[4].style.opacity ="0"
-
-    }
-    else{
-        currentIndex+=1;
-        previousIndex=currentIndex-1
-        if(currentIndex===slides.length-1){
-            nextIndex=-1
-
-        }
-        else{
-            nextIndex=currentIndex+1
-        }
-    }
-    slides[currentIndex].style.opacity = "1";
-    slides[previousIndex].style.opacity ="0"
-}
-
-setInterval(sliderAnimation, slideInterval)
-
 
 
 
