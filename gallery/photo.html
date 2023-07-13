@@ -462,14 +462,14 @@
       <div class="fullscreen">
         <span class="material-symbols-outlined img-close">close</span>
         <img src="" class="fullscreen-img" alt="">
-    </div>
+      </div>
       <script type="module" src="/main.js"></script>
       <script src="../script.js"></script>
       <script>
         const fullscreen = document.querySelector('.fullscreen');
         const fullscreenImg = document.querySelector('.fullscreen-img');
         const imgClose = document.querySelector('.img-close');
-        const img= document.querySelectorAll('img');
+        const img= document.querySelectorAll('.grid_item img');
         img.forEach(element => {
             element.addEventListener("click", function() {
                 fullscreenImg.src=element.src;

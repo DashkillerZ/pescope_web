@@ -10,6 +10,7 @@
     <title>PESCOPE | admissions open</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../admission/admission.css">
+    <link rel="stylesheet" href="../gallery/gallery.css">
 </head>
 
 <body>
@@ -310,7 +311,14 @@
 
         <div class="courses_offered">
 
+
             <div class="table_container">
+              <div class="photo_grid">
+                <div class="grid_item"><img src="../public/images/anti-rag-1.webp" alt=""></div>
+                <div class="grid_item"><img src="../public/images/anti-rag-2.webp" alt=""></div>
+                <div class="grid_item"><img src="../public/images/anti-rag-3.webp" alt=""></div>
+                <div class="grid_item"><img src="../public/images/anti-rag-4.webp" alt=""></div>
+              </div>
                 <h2 class="title">ANTI-RAGGING COMMITTEE</h2>
                 <table>
                   <tr>
@@ -365,7 +373,7 @@
               <div>Mobile- <b>8830427726</b></div>
             </div>
             <div class="anti">
-              <div><a target="_blank" href="../public/documents/anti-rag.pdf">Anti Ragging Poster<img width="15" src="../public/images/PDF_icon.svg.png" alt=""></a></div>
+              <!-- <div><a target="_blank" href="../public/documents/anti-rag.pdf">Anti Ragging Poster<img width="15" src="../public/images/PDF_icon.svg.png" alt=""></a></div> -->
               <div><a href="https://antiragging.in/affidavit_registration_disclaimer.html">Students undertaking</a></div>
               <div><a href="https://antiragging.in/compliance_desclaimer.html">College/University compliance</a></div>
             </div>
@@ -429,9 +437,29 @@
       </div>
     </div>
   </div>
+  <div class="fullscreen">
+    <span class="material-symbols-outlined img-close">close</span>
+    <img src="" class="fullscreen-img" alt="">
+  </div>
   <button class="goToTopBtn"><span class="material-symbols-outlined">vertical_align_top</span></button>
   <script type="module" src="/main.js"></script>
   <script src="../script.js"></script>
+  <script>
+    const fullscreen = document.querySelector('.fullscreen');
+    const fullscreenImg = document.querySelector('.fullscreen-img');
+    const imgClose = document.querySelector('.img-close');
+    const img= document.querySelectorAll('img');
+    img.forEach(element => {
+      element.addEventListener("click", function() {
+          fullscreenImg.src=element.src;
+          fullscreen.style.display="flex";
+      });
+  });
+  imgClose.addEventListener('click',function(){
+      fullscreen.style.display="none";
+  
+  });
+  </script>
 </body>
 
 </html>
