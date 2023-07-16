@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PESCOPE | admissions open</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../gallery/gallery.css">
+
 </head>
 
 <body>
@@ -300,8 +302,17 @@
                 <span>&gt;</span>
                 <a href="./news.html"> News & Events</a>
             </div>
+        </div>
+      <div class="news">
+        <div class="photo_grid">
+          <div class="grid_item">
+            <img src="../gallery/gallery_images/img1.webp" alt="">
           </div>
-
+          <div class="grid_item">
+            <img src="../gallery/gallery_images/img2.webp" alt="">
+          </div>
+        </div>
+      </div>
 
 
 
@@ -362,8 +373,29 @@
     </div>
   </div>
   <button class="goToTopBtn"><span class="material-symbols-outlined">vertical_align_top</span></button>
+  <div class="fullscreen">
+    <span class="material-symbols-outlined img-close">close</span>
+    <img src="" class="fullscreen-img" alt="">
+  </div>
   <script type="module" src="/main.js"></script>
   <script src="/script.js"></script>
+  <script>
+    const fullscreen = document.querySelector('.fullscreen');
+    const fullscreenImg = document.querySelector('.fullscreen-img');
+    const imgClose = document.querySelector('.img-close');
+    const img= document.querySelectorAll('.grid_item img');
+    img.forEach(element => {
+        element.addEventListener("click", function() {
+            fullscreenImg.src=element.src;
+            fullscreen.style.display="flex";
+        });
+    });
+    imgClose.addEventListener('click',function(){
+        fullscreen.style.display="none";
+    
+    });
+
+  </script>
 </body>
 
 </html>
