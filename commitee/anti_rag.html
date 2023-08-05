@@ -2,280 +2,323 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../public/images/clg_logo.png" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PESCOPE | admissions open</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../admission/admission.css">
-    <link rel="stylesheet" href="../gallery/gallery.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="../public/images/clg_logo.png" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PESCOPE | admissions open</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../admission/admission.css">
+  <link rel="stylesheet" href="../gallery/gallery.css">
+  <style>
+    .flex{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .photo_grid_antirag{
+      display: grid;
+      place-items: center;
+      margin: 0 1rem;
+      grid-template-columns: repeat(auto-fit,300px );
+    }
+    @media screen and (max-width:1300px) {
+      .flex{
+        grid-template-columns:2fr 1fr;
+      }
+    }
+    @media screen and (max-width:850px) {
+      
+      .flex{
+        grid-template-columns: 1fr;
+      }
+      .photo_grid_antirag{
+        display: grid;
+        place-items: center;
+        margin: 0 2rem;
+        grid-template-columns: repeat(auto-fit,230px );
+      }
+      .photo_grid_antirag .grid_item img{
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div id="app">
-      <div class="header">
-        <div class="pre-nav">
-          <a href="/" class="logo">
-            <img width="80px" src="../public/images/clg_logo.png" alt="">
-          </a>
-          <div class="logo-name">
-            <p>People's Education Society's (Mumbai)</p>
-            <span>P. E. S. College of Physical Education</span>
-          </div>
-          <div class="details-list">
-            <div class="list-el">
-              <div class="icon">
-                <span class="material-symbols-outlined">call</span>
-              </div>
-              <div>
-                <div class="detail-name">Contact</div>
-                <div class="detail-value">+&nbsp;0240&nbsp;2370&nbsp;881</div>
-              </div>
+  <div id="app">
+    <div class="header">
+      <div class="pre-nav">
+        <a href="/" class="logo">
+          <img width="80px" src="../public/images/clg_logo.png" alt="">
+        </a>
+        <div class="logo-name">
+          <p>People's Education Society's (Mumbai)</p>
+          <span>P. E. S. College of Physical Education</span>
+        </div>
+        <div class="details-list">
+          <div class="list-el">
+            <div class="icon">
+              <span class="material-symbols-outlined">call</span>
             </div>
-            <div class="list-el">
-              <div class="icon">
-                <span class="material-symbols-outlined">alternate_email</span>
-              </div>
-              <div>
-                <div class="detail-name">Email</div>
-                <div class="detail-value">Pescollegeped84@gmail.com</div>
-              </div>
-            </div>
-            <div class="list-el">
-              <div class="icon">
-                <span class="material-symbols-outlined">location_on</span>
-              </div>
-              <div>
-                <!-- <div class="detail-name">Location</div> -->
-                <div class="detail-value">Gymnasium Building, Nagsenvana Campus,<br> Cantonment Road, Aurangabad - M.S. </div>
-              </div>
+            <div>
+              <div class="detail-name">Contact</div>
+              <div class="detail-value">+&nbsp;0240&nbsp;2370&nbsp;881</div>
             </div>
           </div>
-          <div class="menu-btn">
-            <span class="material-symbols-outlined">menu</span>
+          <div class="list-el">
+            <div class="icon">
+              <span class="material-symbols-outlined">alternate_email</span>
+            </div>
+            <div>
+              <div class="detail-name">Email</div>
+              <div class="detail-value">Pescollegeped84@gmail.com</div>
+            </div>
+          </div>
+          <div class="list-el">
+            <div class="icon">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div>
+              <!-- <div class="detail-name">Location</div> -->
+              <div class="detail-value">Gymnasium Building, Nagsenvana Campus,<br> Cantonment Road, Aurangabad - M.S.
+              </div>
+            </div>
           </div>
         </div>
-        <div class="navbar">
-          <div class="nav-item">
-            <span>About Us</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+        <div class="menu-btn">
+          <span class="material-symbols-outlined">menu</span>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="nav-item">
+          <span>About Us</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          <ul class="dropdown">
+            <li class="dropdown-item"><a href="../about/about_trust.html">About Trust</a></li>
+            <li class="dropdown-item"><a href="../about/about_college.html">About College</a></li>
+            <li class="dropdown-item"><a href="../about/vision_mission.html">Vision & Mission</a></li>
+            <li class="dropdown-item"><a href="../about/founder_chairman.html">Founder Chairman</a></li>
+            <li class="dropdown-item"><a href="../about/governing_body.html">Governing Body</a></li>
+            <li class="dropdown-item"><a href="../about/chairman_desk.html">Chairman's Desk</a></li>
+            <li class="dropdown-item"><a href="../about/principal_desk.html">Principal's Desk</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span>Admission</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          <ul class="dropdown">
+            <li class="dropdown-item"><a href="../admission/courses_offered.html">Courses Offered</a></li>
+            <li class="dropdown-item"><a href="../admission/fees_structure.html">Fees Structure</a></li>
+            <li class="dropdown-item"><a href="#">Broucher</a></li>
+
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span>Departments</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          <ul class="dropdown">
+            <li class="dropdown-item"><a href="../department/ug.html">UG &emsp; &emsp; &emsp;</a></li>
+            <li class="dropdown-item"><a href="../department/pg.html">PG</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span><a href="../campus.html">Campus</a></span>
+
+        </div>
+        <div class="nav-item">
+          <span>NAAC</span><span class="material-symbols-outlined">arrow_drop_down</span>
+          <ul class="dropdown">
+            <li class="dropdown-item"><a href="#">IQAC &emsp; &emsp;</a></li>
+            <li class="dropdown-item"><a href="#">AQAR &emsp; &emsp;</a></li>
+            <li class="dropdown-item"><a href="#">SSR &emsp; &emsp;</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span>Gallery</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          <ul class="dropdown">
+            <li class="dropdown-item"><a href="../gallery/photo.html">Photo </a></li>
+            <li class="dropdown-item"><a href="../error.html">Video</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span><a href="../news.html">News and events</a></span>
+        </div>
+        <div class="nav-item">
+          <span><a href="../error.html">Alumini</a></span>
+        </div>
+        <div class="nav-item">
+          <span><a href="../error.html">Notice</a></span>
+        </div>
+
+        <div class="nav-item">
+          <span>Statutory cells/committee/RTI</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          <ul class="dropdown">
+            <li class="dropdown-item"><a href="../commitee/statutory_cells.html">Statutory Cells & Committee</a></li>
+            <li class="dropdown-item"><a href="../commitee/rti.html">RTI</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span>APPROVALS/ AFFILIATIONS/DISCLOSURE</span><span class="material-symbols-outlined">arrow_drop_down</span>
+          <ul class="dropdown">
+            <li class="dropdown-item"> <a target="_blank" href="../public/documents/GOVT Of Mah..pdf">GOVT OF MAHA.</a>
+            </li>
+            <li class="dropdown-item"> <a target="_blank" href="../public/documents/UGC.pdf">UGC &emsp; &emsp;
+                &emsp;</a></li>
+            <li class="dropdown-item"> <a target="_blank" href="../public/documents/NCTE.PDF">NCTE</a></li>
+            <li class="dropdown-item"> <a target="_blank" href="../public/documents/Dr. BAMU University.pdf">DR.BAMU
+                UNIVERSITY</a></li>
+            <li class="dropdown-item"> <a target="_blank" href="../public/documents/cet-cell.pdf">CET CELL</a></li>
+            <li class="dropdown-item"> <a target="_blank" href="../public/documents/Shikshan_shulka_samiti.pdf">SHIKSHAN
+                SHULK SAMITI</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <span><a href="../contact.html">Contact</a></span>
+        </div>
+      </div>
+
+
+
+
+      <div class="navbar-responsive">
+        <div class="nav-list">
+          <details class="nav-item">
+            <summary>
+              <span>About Us</span>
+            </summary>
             <ul class="dropdown">
               <li class="dropdown-item"><a href="../about/about_trust.html">About Trust</a></li>
               <li class="dropdown-item"><a href="../about/about_college.html">About College</a></li>
-              <li class="dropdown-item"><a href="../about/vision_mission.html">Vision & Mission</a></li>
               <li class="dropdown-item"><a href="../about/founder_chairman.html">Founder Chairman</a></li>
               <li class="dropdown-item"><a href="../about/governing_body.html">Governing Body</a></li>
               <li class="dropdown-item"><a href="../about/chairman_desk.html">Chairman's Desk</a></li>
               <li class="dropdown-item"><a href="../about/principal_desk.html">Principal's Desk</a></li>
             </ul>
-          </div>
-          <div class="nav-item">
-            <span>Admission</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          </details>
+          <details class="nav-item">
+            <summary>
+              <span>Admission</span>
+            </summary>
             <ul class="dropdown">
               <li class="dropdown-item"><a href="../admission/courses_offered.html">Courses Offered</a></li>
               <li class="dropdown-item"><a href="../admission/fees_structure.html">Fees Structure</a></li>
-              <li class="dropdown-item"><a href="#">Broucher</a></li>
-  
+              <li class="dropdown-item"><a href="#">Brochure</a></li>
             </ul>
-          </div>
-          <div class="nav-item">
-            <span>Departments</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          </details>
+          <details class="nav-item">
+            <summary>
+              <span>Departments</span>
+            </summary>
             <ul class="dropdown">
-              <li class="dropdown-item"><a href="../department/ug.html">UG &emsp; &emsp; &emsp;</a></li>
+              <li class="dropdown-item"><a href="../department/ug.html">UG</a></li>
               <li class="dropdown-item"><a href="../department/pg.html">PG</a></li>
             </ul>
-          </div>
+          </details>
           <div class="nav-item">
-            <span><a href="../campus.html">Campus</a></span> 
-            
+            <a href="../campus.html">
+              <span>Campus</span>
+            </a>
           </div>
-          <div class="nav-item">
-            <span>NAAC</span><span class="material-symbols-outlined">arrow_drop_down</span>
+
+          <details class="nav-item">
+            <summary>
+              <span>NACC</span>
+            </summary>
             <ul class="dropdown">
-              <li class="dropdown-item"><a href="#">IQAC &emsp; &emsp;</a></li>
-              <li class="dropdown-item"><a href="#">AQAR &emsp; &emsp;</a></li>
-              <li class="dropdown-item"><a href="#">SSR &emsp; &emsp;</a></li>
+              <li class="dropdown-item"><a href="#">IQAC</a></li>
+              <li class="dropdown-item"><a href="#">AQAR</a></li>
+              <li class="dropdown-item"><a href="#">SSR</a></li>
             </ul>
-          </div>
-          <div class="nav-item">
-            <span>Gallery</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          </details>
+          <details class="nav-item">
+            <summary>
+              <span>Gallery</span>
+            </summary>
             <ul class="dropdown">
-              <li class="dropdown-item"><a href="../gallery/photo.html">Photo </a></li>
+              <li class="dropdown-item"><a href="../gallery/photo.html">Photo</a></li>
               <li class="dropdown-item"><a href="../error.html">Video</a></li>
             </ul>
-          </div>
+          </details>
           <div class="nav-item">
-            <span><a href="../news.html">News and events</a></span>
+            <a href="../news.html">
+              <span>News and Events</span>
+            </a>
           </div>
-          <div class="nav-item">
-            <span><a href="../error.html">Alumini</a></span>
-          </div>
-          <div class="nav-item">
-            <span><a href="../error.html">Notice</a></span>
-          </div>
-          
-          <div class="nav-item">
-            <span>Statutory cells/committee/RTI</span> <span class="material-symbols-outlined">arrow_drop_down</span>
+          <details class="nav-item">
+            <summary>
+              <span>Statutory cells/committee/RTI</span>
+            </summary>
             <ul class="dropdown">
               <li class="dropdown-item"><a href="../commitee/statutory_cells.html">Statutory Cells & Committee</a></li>
               <li class="dropdown-item"><a href="../commitee/rti.html">RTI</a></li>
             </ul>
-          </div>
-          <div class="nav-item">
-            <span>APPROVALS/ AFFILIATIONS/DISCLOSURE</span><span class="material-symbols-outlined">arrow_drop_down</span>
+          </details>
+          <details class="nav-item">
+            <summary>
+              <span>APPROVALS/ AFFILIATIONS/DISCLOSURE</span>
+            </summary>
             <ul class="dropdown">
-              <li class="dropdown-item"> <a target="_blank" href="../public/documents/GOVT Of Mah..pdf">GOVT OF MAHA.</a></li>
-              <li class="dropdown-item"> <a target="_blank" href="../public/documents/UGC.pdf">UGC  &emsp; &emsp; &emsp;</a></li>
+              <li class="dropdown-item"> <a target="_blank" href="../public/documents/GOVT Of Mah..pdf">GOVT OF
+                  MAHA.</a></li>
+              <li class="dropdown-item"> <a target="_blank" href="../public/documents/UGC.pdf">UGC &emsp; &emsp;
+                  &emsp;</a></li>
               <li class="dropdown-item"> <a target="_blank" href="../public/documents/NCTE.PDF">NCTE</a></li>
-              <li class="dropdown-item"> <a target="_blank" href="../public/documents/Dr. BAMU University.pdf">DR.BAMU UNIVERSITY</a></li>
+              <li class="dropdown-item"> <a target="_blank" href="../public/documents/Dr. BAMU University.pdf">DR.BAMU
+                  UNIVERSITY</a></li>
               <li class="dropdown-item"> <a target="_blank" href="../public/documents/cet-cell.pdf">CET CELL</a></li>
-              <li class="dropdown-item"> <a target="_blank" href="../public/documents/Shikshan_shulka_samiti.pdf">SHIKSHAN SHULK SAMITI</a></li>
+              <li class="dropdown-item"> <a target="_blank"
+                  href="../public/documents/Shikshan_shulka_samiti.pdf">SHIKSHAN SHULK SAMITI</a></li>
             </ul>
+          </details>
+          <div class="nav-item">
+            <a href="../error.html">
+              <span>Alumini</span>
+            </a>
           </div>
           <div class="nav-item">
-            <span><a href="../contact.html">Contact</a></span>
+            <a href="../error.html">
+              <span>Notice</span>
+            </a>
+          </div>
+          <div class="nav-item">
+            <a href="../contact.html">
+              <span>Contact</span>
+            </a>
           </div>
         </div>
-  
-  
-  
-  
-        <div class="navbar-responsive">
-          <div class="nav-list">
-            <details class="nav-item">
-              <summary>
-                <span>About Us</span>
-              </summary>
-              <ul class="dropdown">
-                <li class="dropdown-item"><a href="../about/about_trust.html">About Trust</a></li>
-                <li class="dropdown-item"><a href="../about/about_college.html">About College</a></li>
-                <li class="dropdown-item"><a href="../about/founder_chairman.html">Founder Chairman</a></li>
-                <li class="dropdown-item"><a href="../about/governing_body.html">Governing Body</a></li>
-                <li class="dropdown-item"><a href="../about/chairman_desk.html">Chairman's Desk</a></li>
-                <li class="dropdown-item"><a href="../about/principal_desk.html">Principal's Desk</a></li>
-              </ul>
-            </details>
-            <details class="nav-item">
-              <summary>
-                <span>Admission</span>
-              </summary>
-              <ul class="dropdown">
-                <li class="dropdown-item"><a href="../admission/courses_offered.html">Courses Offered</a></li>
-                <li class="dropdown-item"><a href="../admission/fees_structure.html">Fees Structure</a></li>
-                <li class="dropdown-item"><a href="#">Brochure</a></li>
-              </ul>
-            </details>
-            <details class="nav-item">
-              <summary>
-                <span>Departments</span>
-              </summary>
-              <ul class="dropdown">
-                <li class="dropdown-item"><a href="../department/ug.html">UG</a></li>
-                <li class="dropdown-item"><a href="../department/pg.html">PG</a></li>
-              </ul>
-            </details>
-            <div class="nav-item">
-              <a href="../campus.html">
-                <span>Campus</span>
-              </a>
+        <div class="details-list">
+          <div class="list-el">
+            <div class="icon">
+              <span class="material-symbols-outlined">call</span>
             </div>
-  
-            <details class="nav-item">
-              <summary>
-                <span>NACC</span>
-              </summary>
-              <ul class="dropdown">
-                <li class="dropdown-item"><a href="#">IQAC</a></li>
-                <li class="dropdown-item"><a href="#">AQAR</a></li>
-                <li class="dropdown-item"><a href="#">SSR</a></li>
-              </ul>
-            </details>
-            <details class="nav-item">
-              <summary>
-                <span>Gallery</span>
-              </summary>
-              <ul class="dropdown">
-                <li class="dropdown-item"><a href="../gallery/photo.html">Photo</a></li>
-                <li class="dropdown-item"><a href="../error.html">Video</a></li>
-              </ul>
-            </details>
-            <div class="nav-item">
-              <a href="../news.html">
-                <span>News and Events</span>
-              </a>
-            </div>
-            <details class="nav-item">
-              <summary>
-                <span>Statutory cells/committee/RTI</span>
-              </summary>
-              <ul class="dropdown">
-                <li class="dropdown-item"><a href="../commitee/statutory_cells.html">Statutory Cells & Committee</a></li>
-                <li class="dropdown-item"><a href="../commitee/rti.html">RTI</a></li>
-              </ul>
-            </details>
-            <details class="nav-item">
-              <summary>
-                <span>APPROVALS/ AFFILIATIONS/DISCLOSURE</span>
-              </summary>
-              <ul class="dropdown">
-                <li class="dropdown-item"> <a target="_blank" href="../public/documents/GOVT Of Mah..pdf">GOVT OF MAHA.</a></li>
-                <li class="dropdown-item"> <a target="_blank" href="../public/documents/UGC.pdf">UGC  &emsp; &emsp; &emsp;</a></li>
-                <li class="dropdown-item"> <a target="_blank" href="../public/documents/NCTE.PDF">NCTE</a></li>
-                <li class="dropdown-item"> <a target="_blank" href="../public/documents/Dr. BAMU University.pdf">DR.BAMU UNIVERSITY</a></li>
-                <li class="dropdown-item"> <a target="_blank" href="../public/documents/cet-cell.pdf">CET CELL</a></li>
-                <li class="dropdown-item"> <a target="_blank" href="../public/documents/Shikshan_shulka_samiti.pdf">SHIKSHAN SHULK SAMITI</a></li>
-              </ul>
-            </details>
-            <div class="nav-item">
-              <a href="../error.html">
-                <span>Alumini</span>
-              </a>
-            </div>
-            <div class="nav-item">
-              <a href="../error.html">
-                <span>Notice</span>
-              </a>
-            </div>
-            <div class="nav-item">
-              <a href="../contact.html">
-                <span>Contact</span>
-              </a>
+            <div>
+              <div class="detail-name">Contact</div>
+              <div class="detail-value">+&nbsp;0240&nbsp;2370&nbsp;881</div>
             </div>
           </div>
-          <div class="details-list">
-            <div class="list-el">
-              <div class="icon">
-                <span class="material-symbols-outlined">call</span>
-              </div>
-              <div>
-                <div class="detail-name">Contact</div>
-                <div class="detail-value">+&nbsp;0240&nbsp;2370&nbsp;881</div>
-              </div>
+          <div class="list-el">
+            <div class="icon">
+              <span class="material-symbols-outlined">alternate_email</span>
             </div>
-            <div class="list-el">
-              <div class="icon">
-                <span class="material-symbols-outlined">alternate_email</span>
-              </div>
-              <div>
-                <div class="detail-name">Email</div>
-                <div class="detail-value">Pescollegeped84@gmail.com</div>
-              </div>
+            <div>
+              <div class="detail-name">Email</div>
+              <div class="detail-value">Pescollegeped84@gmail.com</div>
             </div>
-            <div class="list-el">
-              <div class="icon">
-                <span class="material-symbols-outlined">location_on</span>
-              </div>
-              <div>
-                <div class="detail-name">Location</div>
-                <div class="detail-value">Gymnasium Building, Nagsenvana Campus,<br> Cantonment Road, Aurangabad - M.S. </div>
+          </div>
+          <div class="list-el">
+            <div class="icon">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div>
+              <div class="detail-name">Location</div>
+              <div class="detail-value">Gymnasium Building, Nagsenvana Campus,<br> Cantonment Road, Aurangabad - M.S.
               </div>
             </div>
           </div>
         </div>
-  
-  
       </div>
+
+
+    </div>
 
 
 
@@ -300,98 +343,95 @@
     <div class="main">
 
 
-        <div class="breadcrumb">
-            <h1>ANTI-RAGGING COMMITTEE</h1>
-            <div>
-                <a href="/"><span class="material-symbols-outlined">home</span>Home</a>
-                <span>&gt;</span>
-                <a href="./anti_rag.html">ANTI-RAGGING COMMITTEE</a>
-            </div>
+      <div class="breadcrumb">
+        <h1>ANTI-RAGGING COMMITTEE</h1>
+        <div>
+          <a href="/"><span class="material-symbols-outlined">home</span>Home</a>
+          <span>&gt;</span>
+          <a href="./anti_rag.html">ANTI-RAGGING COMMITTEE</a>
+        </div>
+      </div>
+
+      <div class="flex">
+
+      <div class="courses_offered">
+        <div class="table_container">
+          <h2 class="title">ANTI-RAGGING COMMITTEE</h2>
+          <table>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Name</th>
+              <th>Designation</th>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>Dr. Shivaji Tulshiram Suryawanshi</td>
+              <td>Chairman</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Dr. M.K.Ubale</td>
+              <td>Member</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Mr. Mangesh Dongre</td>
+              <td>Member</td>
+            </tr>
+          </table>
+          <h2 class="title">ANTI-RAGGING SQUAD</h2>
+          <table>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Name</th>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>Dr. Shivaji Suryawanshi </td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Dr. Santosh Kamble</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Dr. Mangesh Dongre </td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Dr. Mahadev Ubale</td>
+            </tr>
+          </table>
+        </div>
+        <div style="margin:20px 0; font-size:1.1rem;">
+          <div>National Anti Ragging Help Line:</div>
+          <b>1800-180-5522</b>
+          <div>College Anti-Ragging Helpline: 02402370881</div>
+          <div>Mobile- <b>8830427726</b></div>
+        </div>
+        <div class="anti">
+          <!-- <div><a target="_blank" href="../public/documents/anti-rag.pdf">Anti Ragging Poster<img width="15" src="../public/images/PDF_icon.svg.png" alt=""></a></div> -->
+          <div><a href="https://antiragging.in/affidavit_registration_disclaimer.html">Students undertaking</a></div>
+          <div><a href="https://antiragging.in/compliance_desclaimer.html">College/University compliance</a></div>
         </div>
 
-        <div class="courses_offered">
-
-
-            <div class="table_container">
-              <div class="photo_grid">
-                <div class="grid_item"><img src="../public/images/anti-rag-1.webp" alt=""></div>
-                <div class="grid_item"><img src="../public/images/anti-rag-2.webp" alt=""></div>
-                <div class="grid_item"><img src="../public/images/anti-rag-3.webp" alt=""></div>
-                <div class="grid_item"><img src="../public/images/anti-rag-4.webp" alt=""></div>
-              </div>
-                <h2 class="title">ANTI-RAGGING COMMITTEE</h2>
-                <table>
-                  <tr>
-                    <th>Sr. No.</th>
-                        <th>Name</th>
-                        <th>Designation</th>
-                      </tr>
-                    <tr>
-                      <td>1.</td>
-                      <td>Dr. Shivaji Tulshiram Suryawanshi</td>
-                      <td>Chairman</td>
-                    </tr>
-                    <tr>
-                      <td>2.</td>
-                        <td>Dr. M.K.Ubale</td>
-                        <td>Member</td>
-                      </tr>
-                      <tr>
-                        <td>3.</td>
-                        <td>Mr. Mangesh Dongre</td>
-                        <td>Member</td>
-                      </tr>
-                </table>
-                <h2 class="title">ANTI-RAGGING SQUAD</h2>
-                <table>
-                  <tr>
-                    <th>Sr. No.</th>
-                    <th>Name</th>
-                  </tr>
-                  <tr>
-                      <td>1.</td>
-                      <td>Dr. Shivaji Suryawanshi </td>
-                  </tr>
-                  <tr>
-                      <td>2.</td>
-                      <td>Dr. Santosh Kamble</td>
-                  </tr>
-                  <tr>
-                      <td>3.</td>
-                      <td>Dr. Mangesh Dongre </td>
-                  </tr>
-                  <tr>
-                      <td>4.</td>
-                      <td>Dr. Mahadev Ubale</td>
-                  </tr>
-              </table>
-            </div>
-            <div style="margin:20px 0; font-size:1.1rem;">
-              <div>National Anti Ragging Help Line:</div>
-              <b>1800-180-5522</b>
-              <div>College Anti-Ragging Helpline: 02402370881</div>
-              <div>Mobile- <b>8830427726</b></div>
-            </div>
-            <div class="anti">
-              <!-- <div><a target="_blank" href="../public/documents/anti-rag.pdf">Anti Ragging Poster<img width="15" src="../public/images/PDF_icon.svg.png" alt=""></a></div> -->
-              <div><a href="https://antiragging.in/affidavit_registration_disclaimer.html">Students undertaking</a></div>
-              <div><a href="https://antiragging.in/compliance_desclaimer.html">College/University compliance</a></div>
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
+      </div>
+      <div class="photo_grid_antirag" >
+        <div class="grid_item"><img style="max-width: 80%;" src="../public/images/anti-rag-1.webp" alt=""></div>
+        <div class="grid_item"><img style="max-width: 80%;" src="../public/images/anti-rag-2.webp" alt=""></div>
+        <div class="grid_item"><img style="max-width: 80%;" src="../public/images/anti-rag-3.webp" alt=""></div>
+        <div class="grid_item"><img style="max-width: 80%;" src="../public/images/anti-rag-4.webp" alt=""></div>
+      </div>
+    </div>
 
     </div>
+
+
+
+
+
+
+
     <div class="footer">
       <div class="top">
         <div class="logo-container">
@@ -405,7 +445,7 @@
         </div>
         <div class="quick-links">
           <p>Quick Links</p>
-          <div style="display:flex"> 
+          <div style="display:flex">
             <div class="list">
               <a href="../admission/courses_offered.html">Courses Offered</a>
               <a href="../admission/fees_structure.html">Fees Structure</a>
@@ -442,24 +482,32 @@
     <img src="" class="fullscreen-img" alt="">
   </div>
   <button class="goToTopBtn"><span class="material-symbols-outlined">vertical_align_top</span></button>
+
+
+
+  
   <script type="module" src="/main.js"></script>
   <script src="../script.js"></script>
+
+
+
   <script>
     const fullscreen = document.querySelector('.fullscreen');
     const fullscreenImg = document.querySelector('.fullscreen-img');
     const imgClose = document.querySelector('.img-close');
-    const img= document.querySelectorAll('img');
+    const img = document.querySelectorAll('img');
     img.forEach(element => {
-      element.addEventListener("click", function() {
-          fullscreenImg.src=element.src;
-          fullscreen.style.display="flex";
+      element.addEventListener("click", function () {
+        fullscreenImg.src = element.src;
+        fullscreen.style.display = "flex";
       });
-  });
-  imgClose.addEventListener('click',function(){
-      fullscreen.style.display="none";
-  
-  });
+    });
+    imgClose.addEventListener('click', function () {
+      fullscreen.style.display = "none";
+
+    });
   </script>
+
 </body>
 
 </html>
